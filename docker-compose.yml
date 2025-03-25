@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: slidehub:lts
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: ["yarn", "dev", "--host"]
