@@ -1,3 +1,4 @@
+import AntDesingApresentationSlide from "@/slides/apresentacoes/antDesing";
 import JQueryApresentationSlide from "@/slides/apresentacoes/jquery";
 import { DevWebIntroductionRoom1 } from "@/slides/geracaoTech";
 import type React from "react";
@@ -16,5 +17,8 @@ export const slideRoutesSchema: ISlideRoutesSchema[] = [
   {
     path: "/apresentacoes/jquery",
     element: JQueryApresentationSlide,
+  },  {
+    path: "/apresentacoes/antDesing",
+    element: AntDesingApresentationSlide,
   },
 ];
